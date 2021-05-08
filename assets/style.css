@@ -1,0 +1,473 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #d1d4d6;
+  color: #0f2758;
+  margin: 0;
+  padding: 0;
+  }
+
+header {
+  display: inline;
+  height: auto;
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+  margin: auto;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.navigation {
+  background-color: rgb(48, 47, 47);
+  overflow: hidden;
+  margin: auto;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: auto;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navigation .nav_drop {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .drop_button {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navigation a:hover, .dropdown:hover .drop_button {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation a:not(:first-child), .dropdown .drop_button {
+    display: none;
+  }
+  .navigation a.nav_drop {
+    float: right;
+    display: block;
+  }
+}
+
+main {
+  font-size: 21px;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: midnightblue;
+  font-weight: 200;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+.head {
+  margin: 30px;
+}
+
+.sub-title {
+  text-align: center;
+  margin: 50px 50px 25px 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tourism {
+  flex-basis: 48%;
+  margin: 30px auto;
+  text-align: center;
+  color: #032216;
+  padding: 25px;
+  border: 10px solid #032216;
+  background-color: #f1f6f9;
+  border-radius: 25px;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.kawah-ijen {
+  flex-basis: 48%;
+  margin: 20px auto;
+  text-align: center;
+  border: 10px solid #032216;
+  color: #14274e;
+  padding: 25px;
+  background-color: #f1f6f9;
+  border-radius: 25px;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.foto {
+  width: 500px;
+  border-radius: 10%;
+}
+
+.ijen-pic {
+  width: 500px;
+  border-radius: 10%;
+}
+
+.tourism:hover {
+  transform: scale(1.02);
+  box-shadow: 8px 8px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.kawah-ijen:hover {
+  transform: scale(1.02);
+  box-shadow: 8px 8px 19px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.snapshots:hover {
+  transform: scale(1.02);
+  box-shadow: 8px 8px 19px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.foto:hover {
+  transform: scale(1.02);
+  box-shadow: 8px 8px 19px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.ijen-pic:hover {
+  transform: scale(1.02);
+  box-shadow: 8px 8px 19px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+
+
+.snapshots {
+  flex-basis: 30%;
+  margin: 30px auto;
+  text-align: center;
+  color:#032216;
+  padding: 0px;
+  border-radius: 40px;
+}
+
+.snapshots img {
+  width: 900px;
+  border-radius: 25px;
+  margin: 4px;
+  border: 10px solid #032216;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.snapshots img:hover {
+  transform: scale(1.02);
+  box-shadow: 8px 8px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.profile {
+  margin: 25px auto;
+  text-align: center;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+table {
+  margin: auto;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+  padding: 8px;
+  background-color: rgb(48, 47, 47);;
+  color: #ebf0f3;
+}
+
+article p {
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 1.8;
+  margin: 50px;
+}
+
+aside p {
+  text-align: center;
+  margin: 30px auto;
+}
+
+figcaption {
+  margin: 30px auto;
+  background-color: #d1d4d6;
+  text-align: center;
+  height: 32px;
+  font-size: 28px;
+}
+
+figcaption p {
+  font-size: 21px;
+}
+
+.name {
+  color: #11254d;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1350px) {
+  .tourism {
+    flex-basis: 75%;
+  }
+
+  .profile {
+    width: auto;
+  }
+
+  .kawah-ijen {
+    flex-basis: 75%;
+
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .snapshots img {
+    width: 500px;
+  }
+  
+}
+
+@media screen and (max-width: 695px) {
+  .profile img {
+    width: 250px;
+  }
+
+  .foto {
+    width: 250px;
+  }
+
+  .snapshots img {
+    width: 350px;
+  }
+
+  .ijen-pic {
+    width: 600px;
+  }
+
+  .navbar_toogle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+  }
+
+}
+
+@media screen and (max-width: 545px) {
+  .snapshots img {
+    width: 300px;
+  }
+
+  .navbar_toogle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  #title {
+    font-size: 100px;
+  }
+
+  nav {
+    width: auto;
+  }
+
+  .foto {
+    width: 200px;
+  }
+
+  .ijen-pic {
+    width: 450px;
+  }
+
+
+  .profile img {
+    width: 200px;
+  }
+
+  .snapshots img {
+    width: 220px;
+    margin: auto;
+  }
+
+  article p {
+    text-align: center;
+  }
+
+  .navbar_toogle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+  }
+
+
+ 
+}
+
+@media screen and (max-width: 390px) {
+  nav {
+    position: relative;
+  }
+
+  nav a {
+    float: none;
+    display: grid;
+    margin: auto;
+  }
+
+  ul {
+    padding: 5px;
+  }
+
+  html {
+    scroll-padding-top: 40px;
+  }
+
+  .navbar_toogle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+  }
+
+}
+
+
+@media screen and (max-width: 310px) {
+  .profile img {
+    width: 150px;
+  }
+
+  .snapshots img {
+    width: 180px;
+    margin: auto;
+  }
+
+  .foto {
+    width: 150px;
+  }
+
+  .ijen-pic {
+    width: 300px;
+  }
+
+  .navbar_toogle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+  }
+
+
+  }
+
+
+@media screen and (max-width: 600px) {
+  .navigation.responsive {position: relative;}
+  .navigation.responsive a.nav_drop {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navigation.responsive .dropdown {float: none;}
+  .navigation.responsive .dropdown-content {position: relative;}
+  .navigation.responsive .dropdown .drop_button {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
